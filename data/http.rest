@@ -1,2 +1,24 @@
-// GET Request
+// GET Request Get all post 
 GET http://localhost:8001/api/posts/
+
+###
+
+// GET Requeset by :id
+GET http://localhost:8001/api/posts/100
+
+###
+
+//DELETE by :id
+DELETE  http://localhost:8001/api/posts/100
+
+###
+
+//PUT by :id
+PUT http://localhost:8001/api/posts/2
+Content-Type: application/json
+
+{
+    "text" : "Test Update"
+}
+
+### 
