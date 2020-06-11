@@ -87,12 +87,12 @@ router.put("/:id", validateUserId(), validatePost(), (req, res) => {
 router.post("/", validatePost() , (req, res) => {
 const user = req.body
 
-  userDb.insert(req.data)
-  // console.log(req.data)
+  userDb.insert(req.body)
   .then(user => {
       res.status(201).json(user)
     })
-    .catch(() => {
+    .catch((err) => {
+      console.log(err)
       res.status(500).json({
         message: "Oops, something went wrong, please try again",
       });

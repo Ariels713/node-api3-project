@@ -26,10 +26,10 @@ Content-Type: application/json
 }
 
 ### 
-
+// POST Reqest for new user
 POST http://localhost:8001/api/posts/
 Content-Type: application/json
 
 {
-    "text":"Testing Posting new user"
+    "name":"Testing Posting new user"
 }

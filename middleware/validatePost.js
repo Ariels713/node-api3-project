@@ -4,12 +4,12 @@ module.exports = () => {
             return res.status(400).json({
                 message: "missing post data"
             })
-        } else if (!req.body.text) {
+        } else if (!req.body.name) {
             return res.status(400).json({
                 message: "missing required text field"
             })
         }
-        req.data = req.body
+        // req.data = req.body
         next()
     }
 }
