@@ -4,21 +4,32 @@ GET http://localhost:8001/api/posts/
 ###
 
 // GET Requeset by :id
-GET http://localhost:8001/api/posts/100
+GET http://localhost:8001/api/posts/10
 
 ###
 
+//Get Request :id/posts
+GET http://localhost:8001/api/posts/2/posts
+###
+
 //DELETE by :id
-DELETE  http://localhost:8001/api/posts/100
+DELETE  http://localhost:8001/api/posts/99
 
 ###
 
 //PUT by :id
-PUT http://localhost:8001/api/posts/2
+PUT http://localhost:8001/api/posts/28
 Content-Type: application/json
 
 {
-    "text" : "Test Update"
+    "text" : "Test Update - Test 43"
 }
 
 ### 
+
+POST http://localhost:8001/api/posts/
+Content-Type: application/json
+
+{
+    "text":"Testing Posting new user"
+}
