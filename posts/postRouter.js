@@ -83,7 +83,7 @@ router.put("/:id", validateUserId(), validatePost(), (req, res) => {
     })
 });
 
-//POST new user
+//POST new user ✅🎲
 router.post("/", validatePost() , (req, res) => {
 const user = req.body
 
@@ -99,6 +99,11 @@ const user = req.body
     });
 });
 
+router.get("./env", (req, res) => {
+  res.status(200).json({
+    message: `welcom ${process.env.NAME}`
+  })
+})
 
 
 module.exports = router;

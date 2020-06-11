@@ -33,3 +33,7 @@ Content-Type: application/json
 {
     "name":"Testing Posting new user"
 }
+
+###
+//Get ENV 
+GET http://locahost/api/posts/env
